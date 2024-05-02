@@ -16,5 +16,11 @@
             </ul>
         </div>
     </main>
+<script>
+    const socket = new WebSocket('ws://127.0.0.1:8000/ws/app_employee/');
+    socket.onopen = function (event) {
+                alert('WebSocket is open now.');
+    };
+</script>
 </body>
 </html>
